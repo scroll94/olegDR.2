@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Олег — XX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="grain"></div>
+<div class="vignette"></div>
+<canvas id="dust-canvas"></canvas>
+<canvas id="confetti-canvas"></canvas>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <svg class="seal" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="60" cy="60" r="56" stroke="#c9a961" stroke-width="2"/>
+    <circle cx="60" cy="60" r="46" stroke="#c9a961" stroke-width="1"/>
+    <text x="60" y="72" text-anchor="middle" font-family="Cinzel, serif" font-size="42" fill="#f0dca3">O</text>
+    <path d="M20 92 Q60 108 100 92" stroke="#c9a961" stroke-width="1"/>
+  </svg>
+  <h1>OLEG</h1>
+  <div class="roman">С ДНЁМ РОЖДЕНИЯ&nbsp; · &nbsp;ГЛАВА <b>XX</b></div>
+  <div class="hero-tag">Лучшему другу — от лучшего друга. 12 лет и продолжаем.</div>
+  <div class="marquee">
+    <span class="marquee__track">12 ЛЕТ ДРУЖБЫ&nbsp;&nbsp;•&nbsp;&nbsp;ДОБРО ПОЖАЛОВАТЬ В КЛУБ 20&nbsp;&nbsp;•&nbsp;&nbsp;EST. ДРУЖБА&nbsp;&nbsp;•&nbsp;&nbsp;12 ЛЕТ ДРУЖБЫ&nbsp;&nbsp;•&nbsp;&nbsp;ДОБРО ПОЖАЛОВАТЬ В КЛУБ 20&nbsp;&nbsp;•&nbsp;&nbsp;EST. ДРУЖБА&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  </div>
+  <div class="scrollcue">Пролистать<div class="chev"></div></div>
+</section>
+
+<!-- ============ LETTER ============ -->
+<section class="cert-sec">
+  <div class="wrap" style="text-align:center;">
+    <span class="eyebrow reveal">Личное письмо</span>
+  </div>
+  <div class="cert reveal">
+    <div class="cert-corner-tr"></div>
+    <div class="cert-corner-bl"></div>
+    <h2>Йоу, Олег</h2>
+    <div class="sub">от твоего друга — с 12-летним стажем</div>
+    <p class="cert-p1">Двенадцать лет — это не просто цифра. Это чертовски долгий срок для дружбы, которая до сих пор не надоела ни тебе, ни мне. Ты — мой лучший друг, и сегодня тебе стукнуло двадцать. Круглая цифра для больших дел.</p>
+    <p class="cert-p2">Хочу, чтобы у тебя была жена, за которую не стыдно ни в свете, ни дома. Куча детей, которым передашь фамилию и чувство юмора. Банковский счёт, растущий быстрее очереди у нотариуса. И да — Bugatti. Просто потому что тебе положено.</p>
+    <div class="cert-sign">
+      <div class="wax">12<br>лет</div>
+      <div class="line">
+        <svg class="signature-svg" viewBox="0 0 180 50" width="170" height="46">
+          <path d="M5 35 C 20 5, 35 45, 50 20 S 75 5, 90 30 S 115 45, 130 15 S 160 10, 175 25"/>
+        </svg>
+        <div>ПОДПИСЬ ДРУГА</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHEQUEBOOK ============ -->
+<section class="cheque-sec">
+  <div class="wrap">
+    <span class="eyebrow reveal">Книжка желаний · № 001–010</span>
+    <div class="cheque-grid" id="chequeGrid"></div>
+  </div>
+</section>
+
+<!-- ============ GARAGE ============ -->
+<section class="garage-sec">
+  <div class="wrap">
+    <span class="eyebrow reveal">Гараж мечты</span>
+    <div class="garage-grid">
+      <div class="exhibit reveal">
+        <div class="frame"><img src="https://images.unsplash.com/photo-1653680271731-a40287f83781?fm=jpg&q=80&w=1200&auto=format&fit=crop" alt="Bugatti Chiron" loading="lazy"></div>
+        <div class="plaque"><h3>Bugatti Chiron</h3><span>Exhibit № 01</span></div>
+      </div>
+      <div class="exhibit reveal">
+        <div class="frame"><img src="https://images.unsplash.com/photo-1570294646112-27ce4f174e38?fm=jpg&q=80&w=1200&auto=format&fit=crop" alt="Lamborghini Sian, золотой" loading="lazy"></div>
+        <div class="plaque"><h3>Lamborghini Sian</h3><span>Exhibit № 02</span></div>
+      </div>
+      <div class="exhibit reveal">
+        <div class="frame"><img src="https://images.unsplash.com/photo-1757621788579-7ec41847399b?fm=jpg&q=80&w=1200&auto=format&fit=crop" alt="Rolls-Royce" loading="lazy"></div>
+        <div class="plaque"><h3>Rolls-Royce</h3><span>Exhibit № 03</span></div>
+      </div>
+    </div>
+    <div class="brand-ticker"><span>BUGATTI &nbsp;•&nbsp; <b>ROLLS-ROYCE</b> &nbsp;•&nbsp; LAMBORGHINI &nbsp;•&nbsp; <b>FERRARI</b> &nbsp;•&nbsp; MCLAREN &nbsp;•&nbsp; <b>BENTLEY</b> &nbsp;•&nbsp; BUGATTI &nbsp;•&nbsp; <b>ROLLS-ROYCE</b> &nbsp;•&nbsp; LAMBORGHINI &nbsp;•&nbsp; <b>FERRARI</b> &nbsp;•&nbsp;</span></div>
+  </div>
+</section>
+
+<!-- ============ FINALE ============ -->
+<section class="finale">
+  <span class="eyebrow reveal">Тост</span>
+  <blockquote class="reveal">За двенадцать лет, что были — и за жену, детей, доллары и <b>Bugatti</b>, что ещё будут. С днём рождения, Олег. Ты — лучший друг, которого можно было выписать себе по чеку, и мне повезло, что настоящий.</blockquote>
+  <button class="champagne-btn reveal" id="popBtn">
+    <span class="btn-corner tl"></span><span class="btn-corner tr"></span><span class="btn-corner bl"></span><span class="btn-corner br"></span>
+    <span class="btn-fill"></span>
+    <span class="btn-label">Поднять бокал</span>
+  </button>
+  <div class="final-sign reveal">
+    <div class="sig">твой друг</div>
+    <div class="date">13 ИЮЛЯ 2026</div>
+  </div>
+</section>
+
+<footer>MADE WITH RESPECT · 12 YEARS STRONG</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
